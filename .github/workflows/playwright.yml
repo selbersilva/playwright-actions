@@ -13,10 +13,10 @@ jobs:
     - nome: Get code
       uses: actions/checkout@v4
 
-    - nome: Install Node lts/*
+    - nome: Install Node 18
       uses: actions/setup-node@v4
       with:
-        node-version: lts/*
+        node-version: 18
 
     - name: Install dependencies
       run: npm install
